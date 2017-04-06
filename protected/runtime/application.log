@@ -186,3 +186,14 @@ Stack trace:
 REQUEST_URI=/myTimesheet/index.php/site/contact
 HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/site/contact
 ---
+2017/04/06 19:59:27 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (72)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (13)
+2017/04/06 20:00:06 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "jobsite". in /Users/admin/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('jobsite')
+#1 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/admin/Documents/WebRoot/myTimesheet/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myTimesheet/index.php/jobsite
+---

@@ -21,13 +21,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'user_id'); ?>
-		<?php echo $form->textField($model,'user_id',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->dropDownList($model,'user_id', CHtml::listData(User::model()->findAll(array('order' => 'username')), 'id', 'username')); ?>
 		<?php echo $form->error($model,'user_id'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'date'); ?>
-		<?php echo $form->textField($model,'date'); ?>
+		<?php echo $form->dateField($model,'date', array('placeholder'=>'today')); ?>
 		<?php echo $form->error($model,'date'); ?>
 	</div>
 

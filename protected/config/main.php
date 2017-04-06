@@ -92,4 +92,18 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'mykola.kotok@gmail.com',
 	),
+	
+	// For sending mails from local host
+//	 'mail' => array(
+//		'class' => 'application.extensions.yii-mail.YiiMail',
+//		'transportType' => 'php',
+//		'transportOptions'=>array(
+//		'host'=>'localhost',
+//		'port'=>'8888'
+//		 ),
+//		'viewPath' => 'application.views.mail',
+//		'logging' => true,
+//		'dryRun' => false
+//	),
+	
 );
