@@ -22,11 +22,17 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'user_id',
+		array(
+			'label'=>'User',
+			'value'=>$model->user->fname . ' ' . $model->user->lname,
+		),
 		'date',
 		'start',
 		'end',
-		'jobsite_id',
+		array(
+			'label'=>'Jobsite',
+			'value'=>$model->jobsite->name,
+		),
 		'description',
 	),
 )); ?>

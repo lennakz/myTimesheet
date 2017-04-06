@@ -33,13 +33,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'start'); ?>
-		<?php echo $form->textField($model,'start'); ?>
+		<?php echo $form->timeField($model,'start', array('timeFormat'=>'hh:mm')); ?>
 		<?php echo $form->error($model,'start'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'end'); ?>
-		<?php echo $form->textField($model,'end'); ?>
+		<?php echo $form->timeField($model,'end'); ?>
 		<?php echo $form->error($model,'end'); ?>
 	</div>
 
