@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Create Job', 'url'=>array('create')),
-	array('label'=>'Manage Job', 'url'=>array('admin')),
+//	array('label'=>'Manage Job', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Jobs</h1>
+<h1 class="text-center">Jobs</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

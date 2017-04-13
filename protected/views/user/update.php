@@ -2,12 +2,6 @@
 /* @var $this UserController */
 /* @var $model User */
 
-$this->breadcrumbs=array(
-	'Users'=>array('index'),
-	$model->id=>array('view','id'=>$model->id),
-	'Update',
-);
-
 $this->menu=array(
 	array('label'=>'List User', 'url'=>array('index')),
 	array('label'=>'Create User', 'url'=>array('create')),
@@ -16,6 +10,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update User <?php echo $model->id; ?></h1>
+<h1 class="text-center">Update <?php echo $model->fname; ?>'s information</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

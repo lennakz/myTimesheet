@@ -20,26 +20,42 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'user_id'); ?>
-		<?php echo $form->dropDownList($model,'user_id', CHtml::listData(User::model()->findAll(array('order' => 'username')), 'id', 'username')); ?>
-		<?php echo $form->error($model,'user_id'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'date'); ?>
-		<?php echo $form->dateField($model,'date', array('placeholder'=>'today')); ?>
+		<?php Yii::import('application.extensions.CJuiDateTimePicker.CJuiDateTimePicker');
+			$this->widget('CJuiDateTimePicker',array(
+				'model'=>$model, //Model object
+				'attribute'=>'date', //attribute name
+				'language'=>'en',
+				'mode'=>'date', //use "time","date" or "datetime" (default)
+				'options'=>array("dateFormat"=>'yy-mm-dd') // jquery plugin options
+			));
+		?>
 		<?php echo $form->error($model,'date'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'start'); ?>
-		<?php echo $form->timeField($model,'start', array('timeFormat'=>'hh:mm')); ?>
+		<?php Yii::import('application.extensions.CJuiDateTimePicker.CJuiDateTimePicker');
+			$this->widget('CJuiDateTimePicker',array(
+				'model'=>$model, //Model object
+				'attribute'=>'start', //attribute name
+				'mode'=>'time', //use "time","date" or "datetime" (default)
+				//'options'=>array() // jquery plugin options
+			));
+		?>
 		<?php echo $form->error($model,'start'); ?>
 	</div>
-
+		
 	<div class="row">
 		<?php echo $form->labelEx($model,'end'); ?>
-		<?php echo $form->timeField($model,'end'); ?>
+		<?php Yii::import('application.extensions.CJuiDateTimePicker.CJuiDateTimePicker');
+			$this->widget('CJuiDateTimePicker',array(
+				'model'=>$model, //Model object
+				'attribute'=>'end', //attribute name
+				'mode'=>'time', //use "time","date" or "datetime" (default)
+				//'options'=>array() // jquery plugin options
+			));
+		?>
 		<?php echo $form->error($model,'end'); ?>
 	</div>
 

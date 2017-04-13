@@ -2,35 +2,42 @@
 /* @var $this UserController */
 /* @var $model User */
 
-$this->breadcrumbs=array(
-	'Users'=>array('index'),
-	$model->id,
-);
-
 $this->menu=array(
-	array('label'=>'List User', 'url'=>array('index')),
-	array('label'=>'Create User', 'url'=>array('create')),
 	array('label'=>'Update User', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete User', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage User', 'url'=>array('admin')),
 );
 ?>
-
-<h1>View User #<?php echo $model->id; ?></h1>
+<h1 class="text-center">Good day, <?php echo $model->fname; ?>!</h1>
+<a href="<?php echo Yii::app()->request->baseUrl.'/index.php/user/update/'.Yii::app()->user->id?>" >Update Information</a>
+<br>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id',
 		'username',
-		'password',
-		'fname',
-		'lname',
-		'email',
+		array(
+			'label'=>'Full Name',
+			'value'=>$model->fname.' '.$model->lname,
+		),
+		array(
+			'label'=>'Email',
+			'type'=>'email',
+			'value'=>$model->email,
+		),
 		'address',
 		'phone',
 		'sin',
-		'dob',
-		'salary',
+		array(
+			'label'=>'Birthday',
+			'type'=>'date',
+			'value'=>$model->dob,
+		),
+		array(
+			'label'=>'Wage per hour',
+			'type'=>'number',
+			'value'=>$model->salary,
+		),
+	),
+	'htmlOptions'=>array(
+		'class'=>'table-hover'
 	),
 )); ?>

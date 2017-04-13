@@ -26,6 +26,14 @@ class Job extends CActiveRecord
 		return 'job';
 	}
 
+	protected function beforeSave()
+	{
+		// in Job Create new job user_id will be always current user_id
+		if (empty($this->user_id) and !empty(Yii::app()->user->id))
+			$this->user_id = Yii::app()->user->id;
+		return parent::beforeSave();
+	}
+	
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -34,11 +42,12 @@ class Job extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, date, start, end, jobsite_id, description', 'required'),
+			array('date, start, end, jobsite_id, description', 'required'),
 			array('user_id, jobsite_id', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, user_id, date, start, end, jobsite_id, description', 'safe', 'on'=>'search'),
+			array('user_id', 'unsafe'),
+			array('id, date, start, end, jobsite_id, description', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,9 +72,9 @@ class Job extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'user_id' => 'User',
-			'date' => 'Date (YYYY-MM-DD)',
-			'start' => 'Start (HH:MM:SS)',
-			'end' => 'End (HH:MM:SS)',
+			'date' => 'Date',
+			'start' => 'Start',
+			'end' => 'End',
 			'jobsite_id' => 'Jobsite',
 			'description' => 'Description',
 		);

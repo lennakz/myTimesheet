@@ -28,7 +28,17 @@ class User extends CActiveRecord
 	{
 		return 'user';
 	}
-
+	
+	/**
+	 * Checks if the given password is correct.
+	 * @param string the password to be validated
+	 * @return boolean whether the password is valid
+	 */
+	public function validatePassword($password)
+	{
+		return $password === $this->password ? true : false;
+	}
+	
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -43,7 +53,7 @@ class User extends CActiveRecord
 			array('fname, lname', 'length', 'max'=>15),
 			array('email', 'length', 'max'=>30),
 			array('address', 'length', 'max'=>100),
-			array('phone', 'length', 'max'=>12),
+			array('phone', 'length', 'max'=>17),
 			array('sin', 'length', 'max'=>9),
 			array('salary', 'length', 'max'=>10),
 			// The following rule is used by search().
@@ -79,7 +89,7 @@ class User extends CActiveRecord
 			'address' => 'Address',
 			'phone' => 'Phone',
 			'sin' => 'SIN',
-			'dob' => 'Date of Birth (YYYY-MM-DD)',
+			'dob' => 'Date of Birth',
 			'salary' => 'Salary (per hour)',
 		);
 	}

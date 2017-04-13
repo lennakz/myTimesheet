@@ -3,7 +3,8 @@
 /* @var $data Job */
 ?>
 
-<div class="view">
+<div>
+	<table class="table">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
@@ -32,6 +33,6 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
 	<?php echo CHtml::encode($data->description); ?>
 	<br />
-
+	</table>
 
 </div>

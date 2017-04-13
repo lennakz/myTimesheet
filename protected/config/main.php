@@ -36,6 +36,14 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'class'=>'WebUser',
+		),
+		'format'=>array(
+			'dateFormat'=>'jS M Y',
+			'numberFormat'=>array(
+				'decimals'=>2,
+				'decimalSeparator'=>'.',
+				'thousandSeparator'=>true),
 		),
 
 		// uncomment the following to enable URLs in path-format
@@ -67,9 +75,9 @@ return array(
 				),
 				// uncomment the following to show log messages on web pages
 				
-				array(
-					'class'=>'CWebLogRoute',
-				),
+//				array(
+//					'class'=>'CWebLogRoute',
+//				),
 				
 			),
 		),
