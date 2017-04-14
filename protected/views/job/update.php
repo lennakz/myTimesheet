@@ -7,15 +7,12 @@ $this->breadcrumbs=array(
 	$model->id=>array('view','id'=>$model->id),
 	'Update',
 );
-
-$this->menu=array(
-	array('label'=>'List Job', 'url'=>array('index')),
-	array('label'=>'Create Job', 'url'=>array('create')),
-	array('label'=>'View Job', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Job', 'url'=>array('admin')),
-);
 ?>
 
-<h1>Update Job <?php echo $model->id; ?></h1>
-
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<div class="container">
+	<h1 class="text-center">Update Job <?php echo $model->id; ?></h1>
+	
+	<div class="job-form">
+		<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+	</div>
+</div>

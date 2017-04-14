@@ -15,9 +15,13 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
 	
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.maskedinput.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/scripts.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-formhelpers.js" defer></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-formhelpers.js"></script>
+	
 	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -34,7 +38,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>                        
 				</button>
-				<a class="navbar-brand" href="#">myTimesheet</a>
+				<a class="navbar-brand" href="/myTimesheet/index.php">myTimesheet</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">

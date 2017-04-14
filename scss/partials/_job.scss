@@ -4,16 +4,15 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 13-Apr-2017, 1:58:07 PM
-	For		   : view/user
-    Author     : MK
+    Created on : 14-Apr-2017, 12:53:51 PM
+    Author     : admin
 */
 
-#update-button {
+#create-button {
 	width: 40%;
 }
 
-.user-table {
+.job-table {
 	th, td {
 		padding: 10px !important;
 	}
@@ -26,10 +25,13 @@ and open the template in the editor.
 	}
 }
 
-.user-form {
-	input {
+.job-form {
+	input, textarea {
 		width: 100%;
 		padding-left: 20px;
+	}
+	textarea {
+		height: 200px;
 	}
 	.btn {
 		width: 49%;
@@ -39,4 +41,3 @@ and open the template in the editor.
 		padding-top: 5px;
 	}
 }
-

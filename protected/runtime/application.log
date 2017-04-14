@@ -3450,3 +3450,1065 @@ REQUEST_URI=/myTimesheet/index.php/user/2
 2017/04/13 23:01:03 [warning] [application] Failed to set unsafe attribute "dob" of "User".
 in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
 in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/13 23:19:53 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/13 23:36:49 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 19:36:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "login". in /Users/admin/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/myTimesheet/index.php/login
+---
+2017/04/14 20:40:56 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:41:27 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:41:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'sin'. The SQL statement executed was: UPDATE `user` SET `id`=:yp0, `username`=:yp1, `password`=:yp2, `fname`=:yp3, `lname`=:yp4, `email`=:yp5, `address`=:yp6, `phone`=:yp7, `sin`=:yp8, `dob`=:yp9, `salary`=:yp10, `type`=:yp11 WHERE `user`.`id`='1'. Bound with :yp0='1', :yp1='test', :yp2='test', :yp3='Jack', :yp4='Package', :yp5='jack.package@ggmail.com', :yp6='100-200 Dildo St., Coquitlam, BC, X1X 1Y1', :yp7='6041112233', :yp8='', :yp9='1982-12-12', :yp10='25', :yp11=0.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (96)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:41:27 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'sin'. The SQL statement executed was: UPDATE `user` SET `id`=:yp0, `username`=:yp1, `password`=:yp2, `fname`=:yp3, `lname`=:yp4, `email`=:yp5, `address`=:yp6, `phone`=:yp7, `sin`=:yp8, `dob`=:yp9, `salary`=:yp10, `type`=:yp11 WHERE `user`.`id`='1'. Bound with :yp0='1', :yp1='test', :yp2='test', :yp3='Jack', :yp4='Package', :yp5='jack.package@ggmail.com', :yp6='100-200 Dildo St., Coquitlam, BC, X1X 1Y1', :yp7='6041112233', :yp8='', :yp9='1982-12-12', :yp10='25', :yp11=0 in /Users/admin/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1753): CDbCommand->execute()
+#1 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1127): CActiveRecord->updateByPk('1', Array)
+#2 /Users/admin/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->update(NULL)
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(96): CActiveRecord->save()
+#4 [internal function]: UserController->actionUpdate('1')
+#5 /Users/admin/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 /Users/admin/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#7 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#16 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/update')
+#17 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/myTimesheet/index.php/user/update/1
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/user/update/1
+---
+2017/04/14 20:41:44 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:50:21 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:51:16 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:52:13 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:52:15 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:52:47 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:54:57 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:58:20 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:58:21 [error] [php] number_format() expects parameter 1 to be float, string given (/Users/admin/yii/framework/utils/CFormatter.php:295)
+Stack trace:
+#0 /Users/admin/yii/framework/zii/widgets/CDetailView.php(220): CFormatter->format()
+#1 /Users/admin/yii/framework/web/CBaseController.php(181): CDetailView->run()
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/user/view.php(13): UserController->widget()
+#3 /Users/admin/yii/framework/web/CBaseController.php(126): require()
+#4 /Users/admin/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#5 /Users/admin/yii/framework/web/CController.php(869): UserController->renderFile()
+#6 /Users/admin/yii/framework/web/CController.php(782): UserController->renderPartial()
+#7 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(55): UserController->render()
+#8 unknown(0): UserController->actionView()
+#9 /Users/admin/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /Users/admin/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#13 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#16 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/admin/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#19 /Users/admin/yii/framework/web/CWebApplication.php(282): UserController->run()
+#20 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/user/1
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/user/view.php (13)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (55)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:58:49 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:58:49 [error] [php] number_format() expects parameter 1 to be float, string given (/Users/admin/yii/framework/utils/CFormatter.php:295)
+Stack trace:
+#0 /Users/admin/yii/framework/zii/widgets/CDetailView.php(220): CFormatter->format()
+#1 /Users/admin/yii/framework/web/CBaseController.php(181): CDetailView->run()
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/user/view.php(13): UserController->widget()
+#3 /Users/admin/yii/framework/web/CBaseController.php(126): require()
+#4 /Users/admin/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#5 /Users/admin/yii/framework/web/CController.php(869): UserController->renderFile()
+#6 /Users/admin/yii/framework/web/CController.php(782): UserController->renderPartial()
+#7 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(55): UserController->render()
+#8 unknown(0): UserController->actionView()
+#9 /Users/admin/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /Users/admin/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#13 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#16 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/admin/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#19 /Users/admin/yii/framework/web/CWebApplication.php(282): UserController->run()
+#20 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/user/1
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/user/view.php (13)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (55)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:59:22 [error] [php] number_format() expects parameter 1 to be float, string given (/Users/admin/yii/framework/utils/CFormatter.php:295)
+Stack trace:
+#0 /Users/admin/yii/framework/zii/widgets/CDetailView.php(220): CFormatter->format()
+#1 /Users/admin/yii/framework/web/CBaseController.php(181): CDetailView->run()
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/user/view.php(13): UserController->widget()
+#3 /Users/admin/yii/framework/web/CBaseController.php(126): require()
+#4 /Users/admin/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#5 /Users/admin/yii/framework/web/CController.php(869): UserController->renderFile()
+#6 /Users/admin/yii/framework/web/CController.php(782): UserController->renderPartial()
+#7 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(55): UserController->render()
+#8 unknown(0): UserController->actionView()
+#9 /Users/admin/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /Users/admin/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#13 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#16 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/admin/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#19 /Users/admin/yii/framework/web/CWebApplication.php(282): UserController->run()
+#20 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/user/1
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/user/view.php (13)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (55)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:59:25 [error] [php] number_format() expects parameter 1 to be float, string given (/Users/admin/yii/framework/utils/CFormatter.php:295)
+Stack trace:
+#0 /Users/admin/yii/framework/zii/widgets/CDetailView.php(220): CFormatter->format()
+#1 /Users/admin/yii/framework/web/CBaseController.php(181): CDetailView->run()
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/user/view.php(13): UserController->widget()
+#3 /Users/admin/yii/framework/web/CBaseController.php(126): require()
+#4 /Users/admin/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#5 /Users/admin/yii/framework/web/CController.php(869): UserController->renderFile()
+#6 /Users/admin/yii/framework/web/CController.php(782): UserController->renderPartial()
+#7 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(55): UserController->render()
+#8 unknown(0): UserController->actionView()
+#9 /Users/admin/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /Users/admin/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#13 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#16 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/admin/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#19 /Users/admin/yii/framework/web/CWebApplication.php(282): UserController->run()
+#20 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/user/1
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/user/view.php (13)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (55)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 20:59:33 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (95)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:03:39 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (71)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:03:39 [error] [exception.CHttpException.403] CHttpException: You do not have rights to access it! in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php:53
+Stack trace:
+#0 [internal function]: UserController->actionView('4')
+#1 /Users/admin/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#2 /Users/admin/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#3 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#13 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/myTimesheet/index.php/user/4
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/user/create
+---
+2017/04/14 21:04:33 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (71)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:04:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00'.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (72)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:04:33 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00' in /Users/admin/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Users/admin/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(72): CActiveRecord->save()
+#3 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#4 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/myTimesheet/index.php/user/create
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/user/create
+---
+2017/04/14 21:05:42 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (71)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:05:42 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00'.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (72)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:05:42 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00' in /Users/admin/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Users/admin/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(72): CActiveRecord->save()
+#3 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#4 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/myTimesheet/index.php/user/create
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/user/create
+---
+2017/04/14 21:07:15 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (72)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:07:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00'.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (73)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:07:15 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00' in /Users/admin/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Users/admin/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(73): CActiveRecord->save()
+#3 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#4 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/myTimesheet/index.php/user/create
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/user/create
+---
+2017/04/14 21:07:16 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (72)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:07:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00'.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (73)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:07:16 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00' in /Users/admin/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Users/admin/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(73): CActiveRecord->save()
+#3 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#4 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/myTimesheet/index.php/user/create
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/user/create
+---
+2017/04/14 21:10:43 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (72)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:10:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00'.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (73)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:10:43 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00' in /Users/admin/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Users/admin/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(73): CActiveRecord->save()
+#3 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#4 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/admin/yii/framework/web/CController.php(1116): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#17 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/myTimesheet/index.php/user/create
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/user/create
+---
+2017/04/14 21:10:45 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (72)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:10:45 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00'.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (73)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:10:45 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '778-996-252' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='Jim', :yp1='jim', :yp2='Jim', :yp3='Faggot', :yp4='jim.faggot@ggmail.com', :yp5='3456 Ash St., Burnaby, BC, Q2Q 3W2', :yp6='(604) 555-1631', :yp7='778-996-252', :yp8='20.00' in /Users/admin/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Users/admin/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(73): CActiveRecord->save()
+#3 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#4 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/admin/yii/framework/web/CController.php(1116): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#17 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/myTimesheet/index.php/user/create
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/user/create
+---
+2017/04/14 21:10:54 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/admin/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#9 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#10 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/myTimesheet/index.php/user/create
+---
+2017/04/14 21:11:10 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/admin/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#9 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#10 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/myTimesheet/index.php/user/create
+---
+2017/04/14 21:11:41 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (72)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:11:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='demo', :yp1='demo', :yp2='', :yp3='', :yp4='', :yp5='', :yp6='', :yp7='', :yp8=''.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (73)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:11:41 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'sin'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `fname`, `lname`, `email`, `address`, `phone`, `sin`, `salary`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8). Bound with :yp0='demo', :yp1='demo', :yp2='', :yp3='', :yp4='', :yp5='', :yp6='', :yp7='', :yp8='' in /Users/admin/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Users/admin/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(73): CActiveRecord->save()
+#3 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#4 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/myTimesheet/index.php/user/create
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/user/create
+---
+2017/04/14 21:13:58 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (96)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:14:13 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (72)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:14:13 [error] [exception.CHttpException.403] CHttpException: You do not have rights to access it! in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php:54
+Stack trace:
+#0 [internal function]: UserController->actionView('12')
+#1 /Users/admin/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#2 /Users/admin/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#3 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#13 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/myTimesheet/index.php/user/12
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/user/create
+---
+2017/04/14 21:14:48 [error] [php] number_format() expects parameter 1 to be float, string given (/Users/admin/yii/framework/utils/CFormatter.php:295)
+Stack trace:
+#0 /Users/admin/yii/framework/zii/widgets/CDetailView.php(220): CFormatter->format()
+#1 /Users/admin/yii/framework/web/CBaseController.php(181): CDetailView->run()
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/user/view.php(13): UserController->widget()
+#3 /Users/admin/yii/framework/web/CBaseController.php(126): require()
+#4 /Users/admin/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#5 /Users/admin/yii/framework/web/CController.php(869): UserController->renderFile()
+#6 /Users/admin/yii/framework/web/CController.php(782): UserController->renderPartial()
+#7 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php(56): UserController->render()
+#8 unknown(0): UserController->actionView()
+#9 /Users/admin/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /Users/admin/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#13 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#16 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/admin/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#19 /Users/admin/yii/framework/web/CWebApplication.php(282): UserController->run()
+#20 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/user/12
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/user/view.php (13)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (56)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 21:16:36 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (72)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 22:03:39 [error] [php] Object of class Jobsite could not be converted to string (/Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php:30)
+Stack trace:
+#0 /Users/admin/yii/framework/web/CController.php(869): JobController->renderFile()
+#1 /Users/admin/yii/framework/web/CController.php(782): JobController->renderPartial()
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(129): JobController->render()
+#3 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#4 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#6 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#9 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/admin/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#12 /Users/admin/yii/framework/web/CWebApplication.php(282): JobController->run()
+#13 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/job/index
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (30)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (129)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 22:07:23 [error] [exception.CException] CException: Property "CWebApplication.job" is not defined. in /Users/admin/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/yii/framework/base/CModule.php(105): CComponent->__get('job')
+#1 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php(33): CModule->__get('job')
+#2 /Users/admin/yii/framework/web/CBaseController.php(126): require('/Users/admin/Do...')
+#3 /Users/admin/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/Do...', Array, true)
+#4 /Users/admin/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/admin/Do...', Array, true)
+#5 /Users/admin/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(129): CController->render('index', Array)
+#7 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#8 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#17 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/index')
+#18 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#20 {main}
+REQUEST_URI=/myTimesheet/index.php/job/index
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/1
+---
+2017/04/14 22:14:10 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /Users/admin/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/admin/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/admin/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/delete')
+#9 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/myTimesheet/index.php/job/delete/1
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/index
+---
+2017/04/14 22:17:14 [error] [exception.CException] CException: Property "Jobsite.value" is not defined. in /Users/admin/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('value')
+#1 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php(36): CActiveRecord->__get('value')
+#2 /Users/admin/yii/framework/web/CBaseController.php(126): require('/Users/admin/Do...')
+#3 /Users/admin/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/Do...', Array, true)
+#4 /Users/admin/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/admin/Do...', Array, true)
+#5 /Users/admin/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(129): CController->render('index', Array)
+#7 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#8 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#17 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/index')
+#18 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#20 {main}
+REQUEST_URI=/myTimesheet/index.php/job/index
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/1
+---
+2017/04/14 22:25:09 [error] [php] A non well formed numeric value encountered (/Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php:34)
+Stack trace:
+#0 /Users/admin/yii/framework/web/CBaseController.php(95): JobController->renderInternal()
+#1 /Users/admin/yii/framework/web/CController.php(869): JobController->renderFile()
+#2 /Users/admin/yii/framework/web/CController.php(782): JobController->renderPartial()
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): JobController->render()
+#4 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#5 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#7 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#10 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/admin/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#13 /Users/admin/yii/framework/web/CWebApplication.php(282): JobController->run()
+#14 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/job/index
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (34)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 22:26:52 [error] [php] A non well formed numeric value encountered (/Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php:34)
+Stack trace:
+#0 /Users/admin/yii/framework/web/CBaseController.php(95): JobController->renderInternal()
+#1 /Users/admin/yii/framework/web/CController.php(869): JobController->renderFile()
+#2 /Users/admin/yii/framework/web/CController.php(782): JobController->renderPartial()
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): JobController->render()
+#4 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#5 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#7 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#10 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/admin/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#13 /Users/admin/yii/framework/web/CWebApplication.php(282): JobController->run()
+#14 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/job/index
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (34)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 22:26:53 [error] [php] A non well formed numeric value encountered (/Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php:34)
+Stack trace:
+#0 /Users/admin/yii/framework/web/CBaseController.php(95): JobController->renderInternal()
+#1 /Users/admin/yii/framework/web/CController.php(869): JobController->renderFile()
+#2 /Users/admin/yii/framework/web/CController.php(782): JobController->renderPartial()
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): JobController->render()
+#4 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#5 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#7 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#10 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/admin/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#13 /Users/admin/yii/framework/web/CWebApplication.php(282): JobController->run()
+#14 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/job/index
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (34)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 22:30:15 [error] [php] A non well formed numeric value encountered (/Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php:34)
+Stack trace:
+#0 /Users/admin/yii/framework/web/CBaseController.php(95): JobController->renderInternal()
+#1 /Users/admin/yii/framework/web/CController.php(869): JobController->renderFile()
+#2 /Users/admin/yii/framework/web/CController.php(782): JobController->renderPartial()
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): JobController->render()
+#4 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#5 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#7 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#10 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/admin/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#13 /Users/admin/yii/framework/web/CWebApplication.php(282): JobController->run()
+#14 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/job/index
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (34)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 22:30:17 [error] [php] A non well formed numeric value encountered (/Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php:34)
+Stack trace:
+#0 /Users/admin/yii/framework/web/CBaseController.php(95): JobController->renderInternal()
+#1 /Users/admin/yii/framework/web/CController.php(869): JobController->renderFile()
+#2 /Users/admin/yii/framework/web/CController.php(782): JobController->renderPartial()
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): JobController->render()
+#4 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#5 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#7 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#10 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/admin/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#13 /Users/admin/yii/framework/web/CWebApplication.php(282): JobController->run()
+#14 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/job/index
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (34)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 22:30:30 [error] [php] A non well formed numeric value encountered (/Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php:34)
+Stack trace:
+#0 /Users/admin/yii/framework/web/CBaseController.php(95): JobController->renderInternal()
+#1 /Users/admin/yii/framework/web/CController.php(869): JobController->renderFile()
+#2 /Users/admin/yii/framework/web/CController.php(782): JobController->renderPartial()
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): JobController->render()
+#4 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#5 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#7 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#10 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/admin/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#13 /Users/admin/yii/framework/web/CWebApplication.php(282): JobController->run()
+#14 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/job/index
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (34)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 22:30:46 [error] [php] A non well formed numeric value encountered (/Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php:34)
+Stack trace:
+#0 /Users/admin/yii/framework/web/CBaseController.php(95): JobController->renderInternal()
+#1 /Users/admin/yii/framework/web/CController.php(869): JobController->renderFile()
+#2 /Users/admin/yii/framework/web/CController.php(782): JobController->renderPartial()
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): JobController->render()
+#4 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#5 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#7 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#10 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/admin/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#13 /Users/admin/yii/framework/web/CWebApplication.php(282): JobController->run()
+#14 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/job/index
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (34)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 22:34:50 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/admin/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/delete')
+#10 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/myTimesheet/index.php/job/delete/12
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/index
+---
+2017/04/14 22:35:26 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/admin/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/delete')
+#10 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/myTimesheet/index.php/job/delete/12
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/index
+---
+2017/04/14 22:36:12 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /Users/admin/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/admin/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/admin/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/admin')
+#9 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/myTimesheet/index.php/job/admin
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/index
+---
+2017/04/14 22:36:23 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /Users/admin/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/admin/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /Users/admin/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/admin')
+#9 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/myTimesheet/index.php/job/admin
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/index
+---
+2017/04/14 23:03:18 [error] [php] A non well formed numeric value encountered (/Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php:36)
+Stack trace:
+#0 /Users/admin/yii/framework/web/CBaseController.php(95): JobController->renderInternal()
+#1 /Users/admin/yii/framework/web/CController.php(869): JobController->renderFile()
+#2 /Users/admin/yii/framework/web/CController.php(782): JobController->renderPartial()
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): JobController->render()
+#4 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#5 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#7 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#10 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/admin/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#13 /Users/admin/yii/framework/web/CWebApplication.php(282): JobController->run()
+#14 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/job/index
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (36)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/14 23:34:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.total' in 'group statement'. The SQL statement executed was: SELECT sum(t.end-t.start) AS total FROM `job` `t` WHERE t.user_id=:ycp1 GROUP BY t.total. Bound with :ycp1='1'.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (134)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (47)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+2017/04/14 23:34:16 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.total' in 'group statement'. The SQL statement executed was: SELECT sum(t.end-t.start) AS total FROM `job` `t` WHERE t.user_id=:ycp1 GROUP BY t.total. Bound with :ycp1='1' in /Users/admin/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Users/admin/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(134): CActiveRecord->findAll(Object(CDbCriteria))
+#4 /Users/admin/yii/framework/base/CComponent.php(111): JobController->getTotalHoursForPeriod()
+#5 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php(47): CComponent->__get('totalHoursForPe...')
+#6 /Users/admin/yii/framework/web/CBaseController.php(126): require('/Users/admin/Do...')
+#7 /Users/admin/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/Do...', Array, true)
+#8 /Users/admin/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/admin/Do...', Array, true)
+#9 /Users/admin/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): CController->render('index', Array)
+#11 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#12 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/index')
+#22 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/myTimesheet/index.php/job/index
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/14
+---
+2017/04/14 23:34:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1056 Can't group on 'total'. The SQL statement executed was: SELECT sum(t.end-t.start) AS total FROM `job` `t` WHERE t.user_id=:ycp1 GROUP BY total. Bound with :ycp1='1'.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (134)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (47)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+2017/04/14 23:34:58 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1056 Can't group on 'total'. The SQL statement executed was: SELECT sum(t.end-t.start) AS total FROM `job` `t` WHERE t.user_id=:ycp1 GROUP BY total. Bound with :ycp1='1' in /Users/admin/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Users/admin/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 /Users/admin/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(134): CActiveRecord->findAll(Object(CDbCriteria))
+#4 /Users/admin/yii/framework/base/CComponent.php(111): JobController->getTotalHoursForPeriod()
+#5 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php(47): CComponent->__get('totalHoursForPe...')
+#6 /Users/admin/yii/framework/web/CBaseController.php(126): require('/Users/admin/Do...')
+#7 /Users/admin/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/Do...', Array, true)
+#8 /Users/admin/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/admin/Do...', Array, true)
+#9 /Users/admin/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): CController->render('index', Array)
+#11 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#12 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/index')
+#22 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/myTimesheet/index.php/job/index
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/14
+---
+2017/04/14 23:35:23 [error] [php] Array to string conversion (/Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php:47)
+Stack trace:
+#0 /Users/admin/yii/framework/web/CController.php(869): JobController->renderFile()
+#1 /Users/admin/yii/framework/web/CController.php(782): JobController->renderPartial()
+#2 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): JobController->render()
+#3 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#4 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#6 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/admin/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#9 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/admin/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#12 /Users/admin/yii/framework/web/CWebApplication.php(282): JobController->run()
+#13 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CWebApplication->run()
+REQUEST_URI=/myTimesheet/index.php/job/index
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (47)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
+2017/04/15 01:00:33 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.used_id' in 'where clause'. The SQL statement executed was: 
+			SELECT sum(t.end-t.start) AS total 
+			FROM job AS t 
+			WHERE t.used_id = :user_id. Bound with :user_id='1'.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (135)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (47)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+2017/04/15 01:00:34 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.used_id' in 'where clause'. The SQL statement executed was: 
+			SELECT sum(t.end-t.start) AS total 
+			FROM job AS t 
+			WHERE t.used_id = :user_id. Bound with :user_id='1' in /Users/admin/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Users/admin/yii/framework/db/CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(135): CDbCommand->queryScalar(Array)
+#2 /Users/admin/yii/framework/base/CComponent.php(111): JobController->getTotalHoursForPeriod()
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php(47): CComponent->__get('totalHoursForPe...')
+#4 /Users/admin/yii/framework/web/CBaseController.php(126): require('/Users/admin/Do...')
+#5 /Users/admin/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/Do...', Array, true)
+#6 /Users/admin/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/admin/Do...', Array, true)
+#7 /Users/admin/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): CController->render('index', Array)
+#9 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#10 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/index')
+#20 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/myTimesheet/index.php/job/index
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/14
+---
+2017/04/15 01:07:15 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION mytimesheet.TIMEDIF does not exist. The SQL statement executed was: 
+			SELECT TIMEDIF(t.end-t.start)/3600 AS total 
+			FROM job AS t 
+			WHERE t.user_id = :user_id. Bound with :user_id='1'.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (135)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (47)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+2017/04/15 01:07:15 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION mytimesheet.TIMEDIF does not exist. The SQL statement executed was: 
+			SELECT TIMEDIF(t.end-t.start)/3600 AS total 
+			FROM job AS t 
+			WHERE t.user_id = :user_id. Bound with :user_id='1' in /Users/admin/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Users/admin/yii/framework/db/CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(135): CDbCommand->queryScalar(Array)
+#2 /Users/admin/yii/framework/base/CComponent.php(111): JobController->getTotalHoursForPeriod()
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php(47): CComponent->__get('totalHoursForPe...')
+#4 /Users/admin/yii/framework/web/CBaseController.php(126): require('/Users/admin/Do...')
+#5 /Users/admin/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/Do...', Array, true)
+#6 /Users/admin/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/admin/Do...', Array, true)
+#7 /Users/admin/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): CController->render('index', Array)
+#9 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#10 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/index')
+#20 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/myTimesheet/index.php/job/index
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/14
+---
+2017/04/15 01:07:31 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1582 Incorrect parameter count in the call to native function 'TIMEDIFF'. The SQL statement executed was: 
+			SELECT TIMEDIFF(t.end-t.start)/3600 AS total 
+			FROM job AS t 
+			WHERE t.user_id = :user_id. Bound with :user_id='1'.
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (135)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php (47)
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php (124)
+2017/04/15 01:07:31 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1582 Incorrect parameter count in the call to native function 'TIMEDIFF'. The SQL statement executed was: 
+			SELECT TIMEDIFF(t.end-t.start)/3600 AS total 
+			FROM job AS t 
+			WHERE t.user_id = :user_id. Bound with :user_id='1' in /Users/admin/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Users/admin/yii/framework/db/CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(135): CDbCommand->queryScalar(Array)
+#2 /Users/admin/yii/framework/base/CComponent.php(111): JobController->getTotalHoursForPeriod()
+#3 /Users/admin/Documents/WebRoot/myTimesheet/protected/views/job/index.php(47): CComponent->__get('totalHoursForPe...')
+#4 /Users/admin/yii/framework/web/CBaseController.php(126): require('/Users/admin/Do...')
+#5 /Users/admin/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/Do...', Array, true)
+#6 /Users/admin/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/admin/Do...', Array, true)
+#7 /Users/admin/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/JobController.php(124): CController->render('index', Array)
+#9 /Users/admin/yii/framework/web/actions/CInlineAction.php(49): JobController->actionIndex()
+#10 /Users/admin/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Users/admin/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /Users/admin/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /Users/admin/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/admin/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/admin/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/admin/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /Users/admin/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('job/index')
+#20 /Users/admin/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/Documents/WebRoot/myTimesheet/index.php(14): CApplication->run()
+#22 {main}
+REQUEST_URI=/myTimesheet/index.php/job/index
+HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/14
+---

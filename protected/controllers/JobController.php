@@ -2,11 +2,8 @@
 
 class JobController extends Controller
 {
-	/**
-	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
-	 * using two-column layout. See 'protected/views/layouts/column2.php'.
-	 */
-	public $layout='//layouts/column2';
+	
+	public $layout='//layouts/main';
 
 	/**
 	 * @return array action filters
@@ -28,7 +25,7 @@ class JobController extends Controller
 	{
 		return array(
 			array('allow', // allow authenticated user
-				'actions'=>array('create','update','index','view'),
+				'actions'=>array('create','update','index','view','delete'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user
@@ -122,14 +119,26 @@ class JobController extends Controller
 		$criteria->compare('t.user_id', Yii::app()->user->id);
 		$criteria->order = 't.date DESC, t.start DESC';
 		
-		//var_dump(Yii::app()->user);exit;
+		$p['jobs'] = Job::model()->findAll($criteria);
 		
-		$dataProvider = new CActiveDataProvider('Job', [
-			'criteria' => $criteria,
-		]);
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+		$this->render('index', $p);
+	}
+	
+	public function getTotalHoursForPeriod()
+	{
+		$sql = '
+			SELECT SUM(TIME_TO_SEC(t.end) - TIME_TO_SEC(t.start))/3600 AS total 
+			FROM job AS t 
+			WHERE t.user_id = :user_id';
+		$param = array(':user_id'=>Yii::app()->user->id);
+					
+		return round(Yii::app()->db->createCommand($sql)->queryScalar($param), 1);
+		
+		
+		
+		//dump(Job::model()->findAll($criteria));exit;
+		
+		 
 	}
 
 	/**

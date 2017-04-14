@@ -121,4 +121,11 @@ class Job extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
+	public function getTotalHours()
+	{
+		//dump($this->end);dump($this->start);exit;
+		return round((strtotime($this->end) - strtotime($this->start))/3600, 1);
+		
+	}
 }

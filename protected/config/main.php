@@ -40,6 +40,7 @@ return array(
 		),
 		'format'=>array(
 			'dateFormat'=>'jS M Y',
+			//'timeFormat'=>'h:i a',
 			'numberFormat'=>array(
 				'decimals'=>2,
 				'decimalSeparator'=>'.',
@@ -84,11 +85,7 @@ return array(
 		
 		'clientScript'=>array(
 		  'packages'=>array(
-			'jquery'=>array(
-			  'baseUrl'=>'//ajax.googleapis.com/ajax/libs/jquery/3.2.1/',
-			  'js'=>array('jquery.min.js'),
-			  'coreScriptPosition'=>CClientScript::POS_HEAD
-			),
+			'jquery'=>null,
 		  ),
 		),
 
