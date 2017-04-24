@@ -4512,3 +4512,6 @@ Stack trace:
 REQUEST_URI=/myTimesheet/index.php/job/index
 HTTP_REFERER=http://localhost:8888/myTimesheet/index.php/job/14
 ---
+2017/04/16 00:19:46 [warning] [application] Failed to set unsafe attribute "dob" of "User".
+in /Users/admin/Documents/WebRoot/myTimesheet/protected/controllers/UserController.php (72)
+in /Users/admin/Documents/WebRoot/myTimesheet/index.php (14)
